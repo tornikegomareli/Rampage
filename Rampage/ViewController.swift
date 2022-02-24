@@ -10,6 +10,7 @@ import Engine
 
 class ViewController: UIViewController {
     private let imageView = UIImageView()
+    private var player = Player(position: .init(x: 4, y: 4)) // Center of 8,8 bitmap
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,9 @@ class ViewController: UIViewController {
     }
     
     @objc func update(_ displayLink: CADisplayLink) {
+        player.update()
         var renderer = Renderer(width: 8, height: 8)
-        renderer.draw()
+        renderer.draw(player)
         imageView.image = UIImage(bitmap: renderer.bitmap)
     }
     

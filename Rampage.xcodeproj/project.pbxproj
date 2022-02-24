@@ -24,6 +24,12 @@
 		E6CB864B27C700150052299E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB864A27C700150052299E /* UIImage+Extension.swift */; };
 		E6CB864D27C70D980052299E /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB864C27C70D980052299E /* Renderer.swift */; };
 		E6CB864F27C70F5E0052299E /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB864E27C70F5E0052299E /* Vector.swift */; };
+		E6CB865227C70FEA0052299E /* Vector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB865127C70FEA0052299E /* Vector+Operators.swift */; };
+		E6CB865427C7100C0052299E /* Color+SystemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB865327C7100C0052299E /* Color+SystemColors.swift */; };
+		E6CB865627C7102D0052299E /* Bitmap+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB865527C7102D0052299E /* Bitmap+Subscript.swift */; };
+		E6CB865827C710470052299E /* Renderer+Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB865727C710470052299E /* Renderer+Draw.swift */; };
+		E6CB865A27C710760052299E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB865927C710760052299E /* Player.swift */; };
+		E6CB865C27C711D70052299E /* Player+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB865B27C711D70052299E /* Player+Update.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,12 @@
 		E6CB864A27C700150052299E /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		E6CB864C27C70D980052299E /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		E6CB864E27C70F5E0052299E /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		E6CB865127C70FEA0052299E /* Vector+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vector+Operators.swift"; sourceTree = "<group>"; };
+		E6CB865327C7100C0052299E /* Color+SystemColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+SystemColors.swift"; sourceTree = "<group>"; };
+		E6CB865527C7102D0052299E /* Bitmap+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bitmap+Subscript.swift"; sourceTree = "<group>"; };
+		E6CB865727C710470052299E /* Renderer+Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Renderer+Draw.swift"; sourceTree = "<group>"; };
+		E6CB865927C710760052299E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E6CB865B27C711D70052299E /* Player+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+Update.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,12 +162,14 @@
 		E6CB862827C6FDC10052299E /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				E6CB865027C70FDE0052299E /* CoreTypeExtensions */,
 				E6CB862927C6FDC10052299E /* Engine.h */,
 				E6CB862A27C6FDC10052299E /* Engine.docc */,
 				E6CB864527C6FE630052299E /* Color.swift */,
 				E6CB864727C6FEA90052299E /* Bitmap.swift */,
 				E6CB864C27C70D980052299E /* Renderer.swift */,
 				E6CB864E27C70F5E0052299E /* Vector.swift */,
+				E6CB865927C710760052299E /* Player.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -174,6 +188,18 @@
 				E6CB864A27C700150052299E /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E6CB865027C70FDE0052299E /* CoreTypeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				E6CB865127C70FEA0052299E /* Vector+Operators.swift */,
+				E6CB865327C7100C0052299E /* Color+SystemColors.swift */,
+				E6CB865527C7102D0052299E /* Bitmap+Subscript.swift */,
+				E6CB865727C710470052299E /* Renderer+Draw.swift */,
+				E6CB865B27C711D70052299E /* Player+Update.swift */,
+			);
+			path = CoreTypeExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,10 +357,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6CB865627C7102D0052299E /* Bitmap+Subscript.swift in Sources */,
 				E6CB864D27C70D980052299E /* Renderer.swift in Sources */,
+				E6CB865C27C711D70052299E /* Player+Update.swift in Sources */,
 				E6CB862B27C6FDC10052299E /* Engine.docc in Sources */,
+				E6CB865227C70FEA0052299E /* Vector+Operators.swift in Sources */,
+				E6CB865827C710470052299E /* Renderer+Draw.swift in Sources */,
 				E6CB864F27C70F5E0052299E /* Vector.swift in Sources */,
 				E6CB864827C6FEA90052299E /* Bitmap.swift in Sources */,
+				E6CB865427C7100C0052299E /* Color+SystemColors.swift in Sources */,
+				E6CB865A27C710760052299E /* Player.swift in Sources */,
 				E6CB864627C6FE630052299E /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
