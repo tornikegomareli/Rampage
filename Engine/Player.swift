@@ -7,6 +7,9 @@
 
 import Foundation
 
+// TODO: Moving player by touch instead of hard-coded velocity.
+// TODO: Pass touch gestures from the platform layer to the engine
+
 public struct Player {
     public var position: Vector // Just a position in 2D world
     public var velocity: Vector // Velocity combines the speed of an object which is moving
@@ -19,6 +22,8 @@ public struct Player {
     
     public init(position: Vector) {
         self.position = position
+        // TODO: If we set the player velocity -1,-1 wrapping does not work
+        // TODO: Fix it
         self.velocity = Vector(x: 1, y: 1) // default speeed 1,1
     }
 }

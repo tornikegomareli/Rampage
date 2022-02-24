@@ -25,6 +25,9 @@ class ViewController: UIViewController {
         let timeStep = displayLink.timestamp - lastFrameTime
         world.update(timeStep: timeStep)
         lastFrameTime = displayLink.timestamp
+        
+        // Bitmap size to match screen points, imageView is on 0-0-0-0 margins
+        // TODO: On ipad it should be run maximum bitmap size at 512x512
         let size = Int(min(imageView.bounds.width, imageView.bounds.height))
         var renderer = Renderer(width: size, height: size)
         renderer.draw(world)
@@ -42,7 +45,4 @@ class ViewController: UIViewController {
         imageView.backgroundColor = .black
         imageView.layer.magnificationFilter = .nearest
     }
-    
-    
 }
-
