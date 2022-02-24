@@ -25,8 +25,9 @@ class ViewController: UIViewController {
         let timeStep = displayLink.timestamp - lastFrameTime
         world.update(timeStep: timeStep)
         lastFrameTime = displayLink.timestamp
-        var renderer = Renderer(width: 8, height: 8)
-        renderer.draw(world.player)
+        let size = Int(min(imageView.bounds.width, imageView.bounds.height))
+        var renderer = Renderer(width: size, height: size)
+        renderer.draw(world)
         imageView.image = UIImage(bitmap: renderer.bitmap)
     }
     
