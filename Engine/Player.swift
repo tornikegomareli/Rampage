@@ -5,8 +5,6 @@
 //  Created by Tornike Gomareli on 24.02.22.
 //
 
-import Foundation
-
 // TODO: Moving player by touch instead of hard-coded velocity.
 // TODO: Pass touch gestures from the platform layer to the engine
 

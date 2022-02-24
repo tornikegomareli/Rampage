@@ -5,8 +5,6 @@
 //  Created by Tornike Gomareli on 24.02.22.
 //
 
-import Foundation
-
 public extension World {
     mutating func update(timeStep: Double) {
         // We dont need to hard code for 60 FPS because

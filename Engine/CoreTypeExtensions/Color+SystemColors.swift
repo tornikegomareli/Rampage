@@ -5,8 +5,6 @@
 //  Created by Tornike Gomareli on 24.02.22.
 //
 
-import Foundation
-
 public extension Color {
     static let clear = Color(r: 0, g: 0, b: 0, a: 0)
     static let black = Color(r: 0, g: 0, b: 0)
